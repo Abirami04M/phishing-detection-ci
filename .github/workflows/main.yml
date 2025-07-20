@@ -27,4 +27,4 @@ jobs:
 
     - name: Run model performance test
       run: |
-        python src/model_performance.py
+        python phishing-detection-ci/src/model_performance.py
