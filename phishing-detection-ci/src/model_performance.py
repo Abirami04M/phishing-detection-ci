@@ -25,11 +25,11 @@ def compare_models():
     print(f"New Model  - Acc: {new_acc}, F1: {new_f1}")
 
     if new_acc >= base_acc:
-        print("✅ New model is accepted for deployment.")
+        print("New model is accepted for deployment.")
         joblib.dump(new_model, 'phishing-detection-ci/models/base_model.pkl')  # Overwrite base
         return True
     else:
-        print("❌ New model rejected. Rolling back to base.")
+        print("New model rejected. Rolling back to base.")
         return False
     
 
