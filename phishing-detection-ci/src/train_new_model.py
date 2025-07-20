@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from data_preprocess import preprocess_data
 import joblib
 
-X_train, y_train = preprocess_data('phishing-detection-cicid/data/training.csv')
+X_train, y_train = preprocess_data('phishing-detection-ci/data/training.csv')
 
 # Smaller model for testing rejection
 model = RandomForestClassifier(n_estimators=5, max_depth=2, random_state=42)
