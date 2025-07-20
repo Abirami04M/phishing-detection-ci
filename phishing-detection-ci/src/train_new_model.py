@@ -10,4 +10,4 @@ model = RandomForestClassifier(n_estimators=5, max_depth=2, random_state=42)
 model.fit(X_train, y_train)
 
 joblib.dump(model, 'phishing-detection-cicid/models/new_model.pkl')
-print("✅ New model saved as new_model.pkl")
+print("New model saved as new_model.pkl")
