@@ -19,4 +19,4 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 
 # Save base model
 joblib.dump(model, 'phishing-detection-ci/models/base_model.pkl')
-print("✅ Model saved as base_model.pkl")
+print("Model saved as base_model.pkl")
