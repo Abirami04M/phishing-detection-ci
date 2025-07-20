@@ -16,7 +16,7 @@ def compare_models():
     base_model = load_model('phishing-detection-ci/models/base_model.pkl')
     new_model = load_model('phishing-detection-ci/models/new_model.pkl')
 
-    X_test, y_test = preprocess_data('phishing-detection-cicid/data/testing.csv')
+    X_test, y_test = preprocess_data('phishing-detection-ci/data/testing.csv')
 
     base_acc, base_f1 = evaluate(base_model, X_test, y_test)
     new_acc, new_f1 = evaluate(new_model, X_test, y_test)
