@@ -1,7 +1,7 @@
 # src/model_performance.py
 import joblib
 from sklearn.metrics import accuracy_score, f1_score
-from src.data_preprocess import preprocess_data
+from data_preprocess import preprocess_data
 
 def load_model(path):
     return joblib.load(path)
