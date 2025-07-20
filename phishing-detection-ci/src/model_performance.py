@@ -13,8 +13,8 @@ def evaluate(model, X, y):
     return acc, f1
 
 def compare_models():
-    base_model = load_model('phishing-detection-cicid/models/base_model.pkl')
-    new_model = load_model('phishing-detection-cicid/models/new_model.pkl')
+    base_model = load_model('phishing-detection-ci/models/base_model.pkl')
+    new_model = load_model('phishing-detection-ci/models/new_model.pkl')
 
     X_test, y_test = preprocess_data('phishing-detection-cicid/data/testing.csv')
 
