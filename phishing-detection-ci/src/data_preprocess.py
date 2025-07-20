@@ -2,8 +2,8 @@
 from sklearn.preprocessing import LabelEncoder,StandardScaler
 
 
-df_train = pd.read_csv("phishing-detection-cicid/data/training.csv")
-df_test = pd.read_csv('phishing-detection-cicid/data/testing.csv')
+df_train = pd.read_csv("phishing-detection-ci/data/training.csv")
+df_test = pd.read_csv('phishing-detection-ci/data/testing.csv')
 
 print("Training Data Shape:",df_train.shape)
 print("Testing Data Shape:",df_test.shape)
